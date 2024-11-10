@@ -6,6 +6,8 @@ import DashboardPage from "./pages/DashboardPage.jsx";
 import HomePage from "./pages/HomePage";
 import AboutUsPage from "./pages/AboutUsPage";
 import ContactPage from "./pages/ContactPage";
+import BlogPage from "./pages/BlogPage.jsx";
+import BlogDetailPage from "./pages/BlogDetailPage.jsx";
 
 
 const router = createBrowserRouter([
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <DashboardPage />,
   },
+  {
+    path: "/blogs",
+    element: <BlogPage />,
+  },
+  {
+    path: "/blog/:id",
+    element: <BlogDetailPage />,
+  }
 ]);
 
 export default router;
